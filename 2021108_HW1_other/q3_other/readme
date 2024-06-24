@@ -1,0 +1,16 @@
+One can easily compare the performances of all the models using wandb. I have created and trained five different models, out of which I have provided the code for 4.
+
+For numeric accuracy please refer to wandb.ai logs everything is there.
+
+
+1) CNN: first model no normalization hence lowest accuracy.
+
+2) CNN_Aug: Better model, but underfitted due to data augmentation of training
+data, hence lower accuracy
+
+3) CNN_normalized: Additional model to improve the accuracy, basically it does not have data augmentation. Hence for 10 epochs better than CNN_Aug, but it was overfitted. So if epochs would have been 15, CNN_Aug would have outperformed this.
+
+4) ResNet: Better model obviously also has pretrained weights
+
+5) Resnet_Aug: Augmentated images hence better results no overfitting. The best of all.
+
